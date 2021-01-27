@@ -20,9 +20,10 @@ module.exports.postCreate = function( req, res){
         errors.push('phone is required');
     }
     
-    if (errors.lenght) {
+    if (errors.length) {
        res.render('users/create', {
-           errors: errors
+           errors: errors,
+           values: req.body
        });
        return;
     }

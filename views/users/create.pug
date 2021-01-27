@@ -16,8 +16,8 @@ html
                 .form
                     .name
                         label(for="name").mr20 name
-                        input#name(type="text", name="name")
+                        input#name(type="text", name="name", value=values ? values.name : "" )
                     .phone
                         label(for="phone") phone
-                        input#phone(type="text", name="phone")
+                        input#phone(type="text", name="phone", value=values ? values.phone : "")
                 button.btn create
