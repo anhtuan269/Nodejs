@@ -41,3 +41,102 @@ a:hover {
     padding: 30px 0 ;
     text-align: center;
 }
+ .search-page {
+     max-width: 1200px;
+     margin: auto;
+     text-align: center;
+ }
+ .search-page .search {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-top: 30px;
+     padding: 30px 0 ;
+ }
+ .search-page .search a {
+     padding: 10px 20px ;
+    background-color: #f34f3f;
+     color: #fff;
+     font-weight: 500;
+     text-transform: capitalize;
+     transition: all 0.3s linear;
+     border-radius: 50px;
+}
+.search-page .search a:hover {
+    background-color: #000;    
+}
+.search-page .search input {
+    padding: 10px;
+    margin-right: 10px;
+}
+.btn {
+    padding: 10px 20px ;
+    background-color: #f34f3f;
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: all 0.3s linear;
+    border-radius: 50px;
+    border: 1px solid #f34f3f;
+    cursor: pointer;
+}
+.btn:hover {
+    border: 1px solid #000;
+    background-color: #000;
+}
+.search-page .search form button {
+    padding: 10px 20px ;
+    background-color: #f34f3f;
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: all 0.3s linear;
+    border-radius: 50px;
+    border: 1px solid #f34f3f;
+    cursor: pointer;
+}
+.search-page .search form button:hover {
+    border: 1px solid #000;
+    background-color: #000;
+}
+.search-page table {
+    width: 100%;
+    border : 1px solid #000;
+
+}
+.search-page table thead tr {
+    border-bottom : 1px solid #000;
+}
+.search-page table tr th {
+    padding: 10px;
+    border-bottom: 1px solid #000;
+}
+.search-page table tr td {
+    text-align: center;
+    padding: 10px 0;
+}
+.form {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    
+}
+form .form label {
+    margin-right: 20px;
+}
+.create {
+    text-align: center;
+}
+.create h1 {
+    padding: 20px 0;
+}
+.create .form input {
+    padding: 5px 10px;
+    text-align: center;
+}
+.create .form .name {
+    margin-bottom: 20px;
+}
+.create .form .phone {
+    margin-bottom: 20px;
+}

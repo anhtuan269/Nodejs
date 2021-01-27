@@ -1,12 +1,28 @@
-h1 Users
-a(href="/users/create") add
-form(action="/users/search", method= "GET")
-    input(type="text" name="q")
-    button Search
-ul
-    each user in users
-        li
-            span= user.name
-            span 
-            a(href="/users/" + user.id, style=" text-decoration: none; color: orange; margin-left: 10px;") view
+
+html
+    head 
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        link(rel='stylesheet', href='/styles/custom.css' type='text/css')
+    body
+        .search-page
+            h1
+                span Users
+            .search
+                a(href="/users/create") add
+                form(action="/users/search", method= "GET")
+                    input(type="text" name="q")
+                    button Search
+            table
+                thead
+                    tr
+                        th name
+                        th phone
+                        th view                
+                    each user in users
+                        tr
+                            td.name= user.name
+                            td.phone= user.phone
+                            td.view                     
+                                a(href="/users/" + user.id, style=" text-decoration: none; color: orange; margin-left: 10px;") view
 
