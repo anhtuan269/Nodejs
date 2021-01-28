@@ -1,11 +1,12 @@
 var express = require('express');
-var app = express();
+var multer = require('multer');
+
 var router = express.Router();
 var controller = require('../controller/controll.user');
 var db = require('../db');
 var shortid = require('shortid');
 var validate = require('../validate/user.validate.js');
-var authMiddleware = require('../middlewares/auth.middleware')
+var authMiddleware = require('../middlewares/auth.middleware');
 
 router.get('/', controller.index);
 router.get('/create', controller.create);

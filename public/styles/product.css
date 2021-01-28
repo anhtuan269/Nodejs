@@ -1,0 +1,18 @@
+.products {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 0 ;
+    text-align: center;
+}
+.products .container {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    align-items: center;
+    justify-content: space-between;
+}
+.products .container .single-product {
+    padding: 0 14px;
+}
+.products .container .single-product .image figure img {
+    width: 100%;
+} 

@@ -7,7 +7,6 @@ module.exports.login = function(req, res){
 module.exports.postLogin = function(req, res) {
     var email = req.body.email;
     var password = req.body.password;
-        console.log(password);
 
     var user = db.get('users').find({email: email}).value();
     if (!user){

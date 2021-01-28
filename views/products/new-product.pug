@@ -1,0 +1,22 @@
+html
+    head 
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        link(rel='stylesheet', href='/styles/product.css' type='text/css')
+
+    body
+        .products
+            .container
+                each product in products
+                    .single-product
+                        .image
+                            figure
+                                a(href="#")
+                                    img(src="https://heomishop.com/wp-content/uploads/2019/04/kho-ga-la-chanh-21-e1564601435465.jpg", alt="")
+                        .product-content
+                            h4
+                                a(href="#")= product.name
+                            .description
+                                p= product.description
+                            .price
+                                span= product.price

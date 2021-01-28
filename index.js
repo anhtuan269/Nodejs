@@ -7,6 +7,7 @@ var shortid = require('shortid');
 var db = require('./db');
 var userRoutes = require('./route/route.user');
 var authRoutes = require('./route/auth.router');
+var productRoutes =require('./route/product.router');
 var bodyParser = require ('body-parser');
 var authMiddleware = require('./middlewares/auth.middleware');
 app.use(cookieParser());
@@ -22,10 +23,8 @@ res.render('index', {
 });
 app.use('/users',authMiddleware.requireAuth, userRoutes );
 app.use('/auth', authRoutes );
+app.use('/products', productRoutes );
+
 app.listen(port,function(){
     console.log(' Sever listening on port ' + port)
 });
-
-
-
-
