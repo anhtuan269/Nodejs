@@ -16,3 +16,13 @@
 .products .container .single-product .image figure img {
     width: 100%;
 } 
+.products nav {
+    padding-top:50px;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+.products nav ul {
+    justify-content: center;
+}

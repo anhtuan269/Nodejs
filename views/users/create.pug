@@ -12,7 +12,7 @@ html
                 each error in errors
                     .alert.alert-dange= error
 
-            form(action="/users/create" method="POST")
+            form(action="/users/create", method="POST",  enctype="multipart/form-data" )
                 .form
                     .name
                         label(for="name").mr20 name
@@ -20,4 +20,7 @@ html
                     .phone
                         label(for="phone") phone
                         input#phone(type="text", name="phone", value=values ? values.phone : "")
+                .form-group
+                    label(for="avatar") avatar
+                    input#avatar.form-control-file(name="avatar", type="file", )
                 button.btn create

@@ -16,11 +16,14 @@ html
             table
                 thead
                     tr
+                        th Avatar
                         th name
                         th phone
                         th view                
                     each user in users
                         tr
+                            td
+                                img(src=user.avatar, width="64px")
                             td.name= user.name
                             td.phone= user.phone
                             td.view                     

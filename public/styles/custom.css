@@ -15,6 +15,12 @@ a:hover {
     color: #000;
     font-family: Arial,sans-serif;
 }
+.header-menu .nav {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
 .header-menu .nav ul {
     display: flex;
     justify-content: center;
