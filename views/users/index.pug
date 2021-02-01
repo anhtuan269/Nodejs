@@ -5,12 +5,30 @@ html
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
         link(rel='stylesheet', href='/styles/custom.css' type='text/css')
     body
+        .header-menu
+            .nav
+                ul
+                    li
+                        a(href="http://wwww.localhost:3000") Home
+                    li
+                        a(href="./users") users
+                    li
+                        a(href="./users/search") search
+                    li
+                        a(href="./users/create") create
+                    li
+                        a(href="./products") products
+                    li
+                        a(href="./users/:id") views
+            
+        
+                    p= user.name
         .search-page
             h1
                 span Users
             .search
                 a(href="/users/create") add
-                form(action="/users/search", method= "GET")
+                form(action="users/search", method= "GET")
                     input(type="text" name="q")
                     button Search
             table

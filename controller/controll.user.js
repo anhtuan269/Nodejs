@@ -31,9 +31,9 @@ module.exports.search =  function( req, res){
         return user.name.toLowerCase().indexOf(q.toLowerCase()) !== -1;
 
     });
-    
     res.render('users/index',{
         users: mathchedUsers.value()
 
     });
+  
 };

@@ -5,6 +5,7 @@ module.exports.product = function(req, res) {
     var start = (page - 1) * perpage;
     var end = perpage * page;
     res.render('products/new-product', {
+        page: page,
         products: db.get('products').value().slice(start, end)
     });
 };

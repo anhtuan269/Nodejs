@@ -1,3 +1,4 @@
+
 .header-menu {
     background-color: #7952b3;
 }
@@ -5,6 +6,10 @@ a {
     text-decoration: none;
     transition: all 0.3s ease;
 
+}
+.header-menu .nav {
+    display: flex;
+    justify-content: space-between;
 }
 a:hover {
     color: #f34f3f;

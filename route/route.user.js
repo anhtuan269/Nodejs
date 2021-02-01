@@ -21,7 +21,8 @@ router.post('/create',
     validate.postCreate, 
     controller.postCreate
 );
-router.get('/:id', controller.id);
 router.get('/search', controller.search);
+router.get('/:id', controller.id);
+// router.get('/search', controller.search);
 
 module.exports = router;

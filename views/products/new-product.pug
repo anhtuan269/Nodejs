@@ -28,7 +28,7 @@ html
                         .image
                             figure
                                 a(href="#")
-                                    img(src="https://heomishop.com/wp-content/uploads/2019/04/kho-ga-la-chanh-21-e1564601435465.jpg", alt="")
+                                    img(src="image/produc-1.jpg", alt="")
                         .product-content
                             h4
                                 a(href="#")= product.name
@@ -36,10 +36,12 @@ html
                                 p= product.description
                             .price
                                 span= product.price
+                            .add-to-cart
+                                a(href="/cart/add/" + product.id) Add to Cart
             nav(aria-label='Page navigation example')
                 ul.pagination
                     li.page-item
-                        a.page-link(href='#') Previous
+                        a.page-link(disabled href='#') Previous
                     li.page-item
                         a.page-link(href='/products?page=1') 1
                     li.page-item
